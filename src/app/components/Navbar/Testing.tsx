@@ -1,5 +1,11 @@
+import { Button } from "@chakra-ui/react";
+
 export const TestingApp = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <Button colorScheme="red" size="lg">
+      Button using chakra
+    </Button>
+  );
 };
 
 export default TestingApp;

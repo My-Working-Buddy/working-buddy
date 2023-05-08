@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installation guide
 
-Use node v16 or higher
+Use node v18 or higher
 
 ## Available Scripts
 
