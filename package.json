@@ -7,15 +7,13 @@
     "@chakra-ui/react": "^2.6.1",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
-    "@fontsource/forum": "^4.5.9",
-    "@fontsource/open-sans": "^4.5.14",
+    "@fontsource/abeezee": "^4.5.10",
+    "@fontsource/fredoka-one": "^4.5.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^29.5.1",
     "@types/node": "^20.1.0",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
     "framer-motion": "^10.12.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -47,6 +45,8 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
     "typescript": "^5.0.4"
   }
 }

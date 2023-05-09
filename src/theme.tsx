@@ -2,8 +2,8 @@ import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
   fonts: {
-    heading: `'forum', display`,
-    body: `'Open Sans', sans-serif`,
+    heading: `'Fredoka One', display`,
+    body: `'ABeeZee', sans-serif`,
   },
 });
 

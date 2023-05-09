@@ -1,10 +1,19 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Card, CardBody, Heading, Text } from "@chakra-ui/react";
 
 export const TestingApp = () => {
   return (
-    <Button colorScheme="red" size="lg">
-      Button using chakra
-    </Button>
+    <div>
+      <Heading> This is a heading</Heading>
+      <Card>
+        <CardBody>
+          <Text>Testing body content</Text>
+        </CardBody>
+      </Card>
+
+      <Button colorScheme="red" size="lg">
+        Button using chakra
+      </Button>
+    </div>
   );
 };
 

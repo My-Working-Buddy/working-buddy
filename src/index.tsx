@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import { TestingApp } from "./app/components/Navbar/Testing";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
+import "@fontsource/fredoka-one/400.css";
+import "@fontsource/abeezee/400.css";
+
 import theme from "./theme";
 
 const root = ReactDOM.createRoot(
