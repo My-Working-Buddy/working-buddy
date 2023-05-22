@@ -1,5 +1,11 @@
-import { Footer } from "../components/Footer/Footer";
+import { Footer } from '../components/Footer/Footer';
+import LandingNavbar from '../components/Navbar/LandingNavbar';
 
 export default function HomePage() {
-  return <Footer />;
+  return (
+    <>
+      <LandingNavbar />
+      <Footer />;
+    </>
+  );
 }
