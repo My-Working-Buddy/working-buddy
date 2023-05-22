@@ -2,7 +2,7 @@ import React from 'react';
 import { Input, Text, HStack, FormControl, FormLabel} from '@chakra-ui/react'
 import  {Link}  from 'react-router-dom';
 
-const LandingNavbar = () => {
+const Navbar = () => {
 return (
   <div>
     <HStack gridGap={10} px="8" py="2" boxShadow="base" >
@@ -28,4 +28,4 @@ return (
 };
 
 
-export default LandingNavbar; 
+export default Navbar; 
