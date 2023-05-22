@@ -1,5 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+<<<<<<< HEAD
+=======
+import Routing from "./Routing";
+>>>>>>> Make changes to files
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import "@fontsource/fredoka-one/400.css";
@@ -14,7 +18,12 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+<<<<<<< HEAD
       <HomePage />
+=======
+      <Routing />
+    
+>>>>>>> Make changes to files
     </ChakraProvider>
   </React.StrictMode>
 );
