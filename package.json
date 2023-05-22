@@ -8,6 +8,10 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/abeezee": "^4.5.10",
     "@fontsource/fredoka-one": "^4.5.9",
+<<<<<<< HEAD
+=======
+    "@testing-library/jest-dom": "^5.16.5",
+>>>>>>> Make changes to package files
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^29.5.1",
     "@types/node": "^20.1.0",
@@ -15,7 +19,11 @@
     "i18next": "^22.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-i18next": "^12.3.1",
+=======
+    "react-router-dom": "^6.11.1",
+>>>>>>> Make changes to package files
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -47,6 +55,7 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@chakra-ui/storybook-addon": "^4.0.16",
     "@storybook/addon-essentials": "^7.0.13",
     "@storybook/addon-interactions": "^7.0.13",
@@ -59,6 +68,9 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/jest-axe": "^3.5.5",
+=======
+    "@testing-library/react": "^14.0.0",
+>>>>>>> Make changes to package files
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "babel-plugin-named-exports-order": "^0.0.2",
