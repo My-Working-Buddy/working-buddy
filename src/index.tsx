@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { TestingApp } from "./app/components/Navbar/Testing";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import "@fontsource/fredoka-one/400.css";
 import "@fontsource/abeezee/400.css";
 
 import theme from "./theme";
+import HomePage from "./app/pages/Homepage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <TestingApp />
+      <HomePage />
     </ChakraProvider>
   </React.StrictMode>
 );

@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "service": {
+      "headline": "Services",
+      "join": "Join Working buddy"
+    },
+    "resources": {
+      "headline": "Resources",
+      "blog": "Blog",
+      "community": "Community"
+    },
+    "company": {
+      "headline": "Company",
+      "about": "About us",
+      "careers": "Careers",
+      "contacts": "Contacts"
+    },
+    "support": {
+      "headline": "Support",
+      "help_center": "Help Center",
+      "terms_of_service": "Terms of Service",
+      "privacy_policy": "Privacy Policy"
+    },
+    "legal": {
+      "rights_reserved": "© 2023 Working buddy. All rights reserved"
+    }
+  }
+}
