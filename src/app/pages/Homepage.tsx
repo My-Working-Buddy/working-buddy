@@ -1,3 +1,5 @@
+import { Footer } from "../components/Footer/Footer";
+
 export default function HomePage() {
-  return <h1> homepage content goes here</h1>;
+  return <Footer />;
 }
