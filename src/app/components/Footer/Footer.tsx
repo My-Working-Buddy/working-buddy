@@ -23,7 +23,7 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <Box bg={'blue.900'} color={'white'}>
+    <Box bg={'blue.900'} color={'white'} data-testid='Footer'>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
