@@ -1,4 +1,10 @@
 {
+  "navbar" : {
+    "about": "About Us",
+    "contact": "Contact Us",
+    "blog":"Blog",
+    "sign_in": "Sign In"
+  },
   "footer": {
     "service": {
       "headline": "Services",
