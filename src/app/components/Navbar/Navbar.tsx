@@ -1,31 +1,184 @@
-import React from 'react';
-import { Input, Text, HStack, FormControl, FormLabel} from '@chakra-ui/react'
-import  {Link}  from 'react-router-dom';
-
-const Navbar = () => {
-return (
-  <div>
-    <HStack gridGap={10} px="8" py="2" boxShadow="base" >
-      <FormControl>
-        <FormLabel>
-          <Input width="1/4" placeholder='Search' />
-        </FormLabel>
-      </FormControl>
-      <Link to="/about" > 
-          <Text fontSize="sm" color="gray.500">About Us</Text>
-      </Link>
-      <Link to="/contact" > 
-          <Text fontSize="sm" color="gray.500">Contact Us</Text>
-      </Link>
-      <Link to="/login" > 
-          <Text fontSize="sm" color="gray.500" border="blue">Login</Text>
-      </Link>
-    </HStack>
-    
-  </div>
-)
-    
-};
+import React from "react";
+import mainLogo from "../../../assets/logo/mwb-logo.png";
+import { useTranslation } from "../../../Locales";
 
 
-export default Navbar; 
+import {
+  Box,
+  Flex,
+  Button,
+  useColorModeValue,
+  Stack,
+  useColorMode,
+  HStack,
+  useDisclosure,
+  IconButton,
+  
+} from "@chakra-ui/react";
+import {
+  HamburgerIcon,
+  CloseIcon,
+} from "@chakra-ui/icons";
+
+export default function Navbar() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { t } = useTranslation();
+
+
+  return (
+    <div id="navFix">
+      <Box
+        bg={useColorModeValue("gray.100", "gray.900")}
+        px={9}
+        width={["100%"]}
+      >
+        <Flex h={16} alignItems={"center"} justifyContent={"space-between"} gap={8}>
+          <Box boxSize="200px" py={6}>
+           <a href="/">
+            <img src={mainLogo} alt="logo"/>
+          </a>
+          </Box>
+
+          <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+            <HStack spacing={8} alignItems={"center"}>
+              <HStack
+                as={"nav"}
+                spacing={4}
+                display={{ base: "none", md: "flex" }}
+                id="myDIV"
+              >
+                <Button className="btnRes">
+                  <a href="/about">
+                    {" "}
+                    {t("navbar.about")}
+                  </a>
+                </Button>
+
+                <Button className="btnRes">
+                  <a href="/contact">
+                  {t("navbar.contact")}
+                  </a>
+                </Button>
+
+                <Button className="btnRes">
+                  <a href="/blog">
+                    {" "}
+                    {t("navbar.blog")}
+                  </a>
+                </Button>    
+              </HStack>
+            </HStack>
+          </Flex>
+
+
+          <Flex alignItems={"center"}>
+            <Stack direction={"row"} spacing={7}>
+
+              <Button
+                backgroundColor="blue"
+                _hover={{ bg: "#a891b7", color: "black" }}
+                color="white"
+                variant="solid"
+                size={["sm", "md"]}
+                id="resumeBtn"
+              >
+                <a
+                  href="/login"
+                >
+                  Sign In
+                </a>
+              </Button>
+            </Stack>
+          </Flex>
+          <IconButton
+            size={"md"}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={"Open Menu"}
+            display={{ md: "none" }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+          {isOpen ? (
+            <Box pb={4} display={{ md: "none" }}>
+              <Stack as={"nav"} spacing={4}>
+                <Button  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}>
+                  <a href="#Home">
+                    {" "}
+                    <b>Home</b>
+                  </a>
+                </Button>
+                <Button  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}>
+                  <a href="#Home">
+                    {" "}
+                    <b>Home</b>
+                  </a>
+                </Button>
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}
+                >
+                  <a href="/">
+                    {" "}
+                    <b>Home</b>
+                  </a>
+                </Button>
+
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}
+                >
+                  <a href="/about">
+                    <b>About Us</b>
+                  </a>
+                </Button>
+
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}
+                >
+                  <a href="/contact">
+                    {" "}
+                    <b>Contact Us</b>
+                  </a>
+                </Button>
+
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}
+                >
+                  <a href="/blog">
+                    <b>Blog</b>
+                  </a>
+                </Button>
+              </Stack>
+            </Box>
+          ) : null}
+        </Flex>
+      </Box>
+    </div>
+  );
+}
+
+
+
+
