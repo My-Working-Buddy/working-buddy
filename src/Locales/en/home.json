@@ -1,12 +1,14 @@
 {
-  "navbar" : {
+  "navbar": {
     "about": "About Us",
     "contact": "Contact Us",
-    "blog":"Blog",
-    "sign_in": {
-      "headline":"Sign In",
-      "login": "Login",
-      "sign_up": "Sign Up"
+    "blog": "Blog",
+    "menu_bar": {
+      "headline": "Sign In",
+      "menu_items": {
+        "login": "Login",
+        "sign_up": "Sign Up"
+      }
     }
   },
   "footer": {
