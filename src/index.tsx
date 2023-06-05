@@ -7,7 +7,7 @@ import "@fontsource/abeezee/400.css";
 
 import theme from "./theme";
 import HomePage from "./app/pages/Homepage";
-
+import Routing from "./Routing";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -15,6 +15,7 @@ root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <HomePage />
+      <Routing/>
     </ChakraProvider>
   </React.StrictMode>
 );
