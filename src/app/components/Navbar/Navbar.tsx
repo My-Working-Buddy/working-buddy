@@ -85,14 +85,14 @@ export default function Navbar() {
                 id="resumeBtn"
               >
                
-                  Sign In
+               {t("navbar.sign_in.headline")}
               </MenuButton>
               <MenuList>
                 <MenuItem as="a" href="/login">
-                 Login 
+                {t("navbar.sign_in.login")}
                 </MenuItem>
                 <MenuItem as="a" href="/signup">
-                 Sign Up 
+                {t("navbar.sign_in.sign_up")}
                 </MenuItem>
               </MenuList>
             </Menu>

@@ -3,7 +3,11 @@
     "about": "About Us",
     "contact": "Contact Us",
     "blog":"Blog",
-    "sign_in": "Sign In"
+    "sign_in": {
+      "headline":"Sign In",
+      "login": "Login",
+      "sign_up": "Sign Up"
+    }
   },
   "footer": {
     "service": {
