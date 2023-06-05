@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      some Home page content here
+     <div className="py=4">some Home page content here</div> 
       <Footer />;
     </>
   );

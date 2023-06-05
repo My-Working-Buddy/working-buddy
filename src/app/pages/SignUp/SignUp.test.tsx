@@ -1,9 +1,9 @@
 import {render, screen} from '@testing-library/react';
-import ContactUs from './ContactUs';
+import SignUp from './SignUp';
 
 
 it('should render correct heading', () => {
-     render(<ContactUs/>);
-     const headingElement = screen.getByText(/Get in-touch with us/i);
+     render(<SignUp/>);
+     const headingElement = screen.getByText(/Are you new here, please sign Up/i);
      expect(headingElement).toBeInTheDocument();
 })
