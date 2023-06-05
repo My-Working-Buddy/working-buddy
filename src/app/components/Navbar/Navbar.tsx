@@ -32,7 +32,7 @@ export default function Navbar() {
         width={["100%"]}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"} gap={8}>
-          <Box boxSize="200px" py={6}>
+          <Box boxSize="150px" py={6}>
            <a href="/">
             <img src={mainLogo} alt="logo"/>
           </a>
