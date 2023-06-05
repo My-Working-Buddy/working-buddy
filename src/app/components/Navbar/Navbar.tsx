@@ -9,7 +9,6 @@ import {
   Button,
   useColorModeValue,
   Stack,
-  useColorMode,
   HStack,
   useDisclosure,
   IconButton,
@@ -21,7 +20,6 @@ import {
 } from "@chakra-ui/icons";
 
 export default function Navbar() {
-  const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { t } = useTranslation();
 
