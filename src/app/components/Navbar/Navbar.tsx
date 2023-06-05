@@ -12,6 +12,10 @@ import {
   HStack,
   useDisclosure,
   IconButton,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
   
 } from "@chakra-ui/react";
 import {
@@ -71,23 +75,27 @@ export default function Navbar() {
 
 
           <Flex alignItems={"center"}>
-            <Stack direction={"row"} spacing={7}>
+            <Menu>
 
-              <Button
+              <MenuButton
+              as={Button}
                 backgroundColor="blue"
                 _hover={{ bg: "#a891b7", color: "black" }}
                 color="white"
-                variant="solid"
-                size={["sm", "md"]}
                 id="resumeBtn"
               >
-                <a
-                  href="/login"
-                >
+               
                   Sign In
-                </a>
-              </Button>
-            </Stack>
+              </MenuButton>
+              <MenuList>
+                <MenuItem as="a" href="/login">
+                 Login 
+                </MenuItem>
+                <MenuItem as="a" href="/signup">
+                 Sign Up 
+                </MenuItem>
+              </MenuList>
+            </Menu>
           </Flex>
           <IconButton
             size={"md"}
