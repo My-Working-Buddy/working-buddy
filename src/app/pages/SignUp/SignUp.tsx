@@ -3,14 +3,14 @@ import {
   FormControl,
   FormLabel,
   Input, 
-  Text
+  Heading
 } from '@chakra-ui/react'
 
 const SignUp = () => {
   return (
     <div>
       <div>
-      <Text>Are you new here? Please sign Up</Text>
+      <Heading>Are you new here, Please sign Up</Heading>
 
         <FormControl py="2">
           <FormLabel>Email address</FormLabel>
