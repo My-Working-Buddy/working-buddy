@@ -1,13 +1,9 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { Footer } from './Footer';
 import '@testing-library/jest-dom';
 import { axe, toHaveNoViolations } from 'jest-axe';
 
 expect.extend(toHaveNoViolations);
-
-const the = {
-  footer: () => screen.getAllByTestId('Footer'),
-};
 
 describe('<Footer />', () => {
   it('has no accessibility issues', async () => {
@@ -15,6 +11,7 @@ describe('<Footer />', () => {
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
+
   it('render the correct headlines', () => {
     const { getByText } = render(<Footer />);
     expect(getByText(/Services/i)).toBeInTheDocument();
