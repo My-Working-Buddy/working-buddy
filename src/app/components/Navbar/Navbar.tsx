@@ -23,7 +23,7 @@ const MobileNavBar = () => {
   const { t } = useTranslation();
 
   const MobileNavBarItems = [
-    { label: 'Home' },
+    { label: `${t('navbar.home')}` },
     { label: `${t('navbar.about')}`, href: '/about' },
     { label: `${t('navbar.contact')}`, href: '/contact' },
     { label: `${t('navbar.blog')}`, href: '/blog' },
@@ -35,7 +35,7 @@ const MobileNavBar = () => {
         return (
           <Stack spacing={4} onClick={isOpen ? onClose : onOpen} key={idx}>
             <Flex py={2} justify={'space-between'} align={'center'}>
-              <a href={item.href ?? '#'}>
+              <a href={item.href ?? '/'} role='link'>
                 <b>{item.label}</b>
               </a>
             </Flex>
@@ -96,9 +96,15 @@ export default function Navbar() {
             direction={'row'}
             display={{ base: 'none', md: 'flex' }}
           >
-            <a href='/about'>{t('navbar.about')}</a>
-            <a href='/contact'>{t('navbar.contact')}</a>
-            <a href='/blog'>{t('navbar.blog')}</a>
+            <a href='/about' role='link'>
+              {t('navbar.about')}
+            </a>
+            <a href='/contact' role='link'>
+              {t('navbar.contact')}
+            </a>
+            <a href='/blog' role='link'>
+              {t('navbar.blog')}
+            </a>
           </Stack>
 
           <Flex alignItems={'center'}>
