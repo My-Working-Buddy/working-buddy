@@ -5,7 +5,7 @@ const Banner= () => {
     return (
         <div>
             <Box>
-                <img src={mwbCanva} alt='This is the banner section' />
+                <img src={mwbCanva} alt='banner-image' />
             </Box>
         </div>
     )
