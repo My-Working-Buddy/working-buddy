@@ -7,7 +7,7 @@ describe('<Banner/>', () => {
     it('renders an image', () => {
         render(<Banner/>)
         const displayImage = document.querySelector("img") as HTMLImageElement;
-        expect(displayImage.alt).toContain("banner-image");
+        expect(displayImage.alt).toContain("banner-logo");
       })
 
     //   it('display the canva generated banner', () => {
