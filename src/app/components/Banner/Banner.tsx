@@ -5,7 +5,7 @@ import { Text, Image, Heading, Card, CardBody, Stack } from "@chakra-ui/react";
 export const BannerText = () => {
   return (
     <div className="">
-      <Heading>MWB</Heading>
+      <Heading size="lg" as="h3">MWB</Heading>
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
