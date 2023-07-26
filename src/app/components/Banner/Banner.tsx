@@ -1,12 +1,11 @@
-import React from "react";
-import mwbCanva from "../../../assets/mwb-canva.jpg";
-import { Text, Image, Heading, Card, CardBody, Stack } from "@chakra-ui/react";
+import mwbCanva from '../../../assets/mwb-canva.jpg';
+import { Text, Image, Heading, Card, CardBody, Stack } from '@chakra-ui/react';
 
 export const BannerText = () => {
   return (
-    <div className="">
+    <div className=''>
       <Heading>MWB</Heading>
-      <Text>
+      <Text paddingTop={4}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -20,22 +19,22 @@ export const BannerText = () => {
 };
 const Banner = () => {
   return (
-    <div className="max-w">
+    <div className='max-w'>
       <Card
-        direction={{ base: "column", sm: "row" }}
-        overflow="hidden"
-        variant="outline"
+        direction={{ base: 'column', sm: 'row' }}
+        overflow='hidden'
+        variant='outline'
       >
         <Stack>
-          <CardBody minW="3/4">
-            <BannerText/>
+          <CardBody minW='3/4'>
+            <BannerText />
           </CardBody>
         </Stack>
         <Image
-          objectFit="cover"
-          maxW={{ base: "200%", lg: "500px" }}
+          objectFit='cover'
+          maxW={{ base: '200%', lg: '500px' }}
           src={mwbCanva}
-          alt="banner-logo"
+          alt='banner-logo'
         />
       </Card>
     </div>
