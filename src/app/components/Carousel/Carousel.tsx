@@ -45,7 +45,7 @@ const Carousel = () => {
     slidesToScroll: number;
     lazyLoad: true;
     fade: true;
-    arrows: false;
+    arrows: true;
   }
 
   let sliderSettings: SliderSettings = {
@@ -57,7 +57,7 @@ const Carousel = () => {
     slidesToScroll: 1,
     lazyLoad: true,
     fade: true,
-    arrows: false,
+    arrows: true,
   };
 
   return (
