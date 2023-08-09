@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 
 import "@fontsource/fredoka-one/400.css";
 import "@fontsource/abeezee/400.css";
@@ -16,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <Routing/>
+      <Routing />
     </ChakraProvider>
   </React.StrictMode>
 );
