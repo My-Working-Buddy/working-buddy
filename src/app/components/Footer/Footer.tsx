@@ -19,7 +19,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const Footer = () => {
+export default function Footer() {
   const { t } = useTranslation();
 
   return (
@@ -100,4 +100,4 @@ export const Footer = () => {
       </Box>
     </Box>
   );
-};
+}

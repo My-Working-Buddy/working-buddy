@@ -30,6 +30,7 @@ export default function Carousel() {
   const top = useBreakpointValue({ base: "90%", md: "50%" });
   const side = useBreakpointValue({ base: "30%", md: "40px" });
 
+  //make this a prop
   const cards = [
     {
       title: "Design Projects 1",
