@@ -12,7 +12,12 @@ import {
 
 export default function NewsLetter() {
   return (
-    <Flex align={'center'} justify={'center'} p={20} bg={'blue.50'}>
+    <Flex
+      align={'center'}
+      justify={'center'}
+      p={{ base: 5, lg: 20 }}
+      bg={'blue.50'}
+    >
       <Container
         maxW={'3xl'}
         bg={useColorModeValue('white', 'whiteAlpha.100')}
@@ -51,7 +56,7 @@ export default function NewsLetter() {
           </FormControl>
           <FormControl w={{ base: '100%', md: '40%' }}>
             <Button w='100%' bg={'blue.900'}>
-              <Text color={'white'}>Submit</Text>
+              <Text color={'white'}>Subscribe</Text>
             </Button>
           </FormControl>
         </Stack>
