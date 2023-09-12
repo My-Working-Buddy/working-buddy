@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
+import { Auth0Provider } from "@auth0/auth0-react";
 
 import "@fontsource/fredoka-one/400.css";
 import "@fontsource/abeezee/400.css";
@@ -14,7 +15,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
-      <Routing />
+      <Auth0Provider
+        domain="dev-ayqgkm5tkx1eftkh.us.auth0.com"
+        clientId="hPIWaClUDUfRsHd9JMhXTLiLFVmHIa7W"
+        authorizationParams={{
+          redirect_uri: "http://localhost:3000",
+
+        }}
+      >
+        <Routing />
+      </Auth0Provider>
     </ChakraProvider>
   </React.StrictMode>
 );
