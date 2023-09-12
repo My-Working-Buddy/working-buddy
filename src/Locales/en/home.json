@@ -3,14 +3,8 @@
     "about": "About Us",
     "contact": "Contact Us",
     "blog": "Blog",
-    "home": "Home",
-    "menu_bar": {
-      "headline": "Sign In",
-      "menu_items": {
-        "login": "Login",
-        "sign_up": "Sign Up"
-      }
-    }
+    "home": "Home"
+
   },
   "banner": {
     "description": "Introducing My Working Buddy, the ultimate developer's companion.\n\n My Working Buddy is a revolutionary platform designed to empower developers by offering a dynamic platform for peer-to-peer assistance and collaborative knowledge exchange. We have created a vibrant community where developers can come together to share insights, troubleshoot challenges, and gain valuable expertise.\n \nSay goodbye to solitary problem-solving and hello to a world of interconnected developers, all united by their passion for creating cutting-edge solutions.We are uniting Developers, One Line of Code at a Time."
