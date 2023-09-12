@@ -76,5 +76,25 @@ AU->>MWB: Authorization code
 MWB->>AU: Authenticate user ID
 ```
 
+## `Add JSON server api documentation`
+
+The compatible API server runs on `http://localhost:6060` by default. As such, to connect your React application with that API server, create a `.env` file under the root project directory and populate it with the following environment variables:
+
+```bash
+REACT_APP_API_SERVER_URL=http://localhost:6060
+```
+On package.json, set up the `api` on scripts to run with the following command:
+
+```
+json-server --watch db.json --port 6060
+```
+
+Create a db.json file to store and define the JSON data in key value pairs.
+
+Next, execute the following command to run the JSON server API:
+
+```bash
+npm run api
+```
 
 
