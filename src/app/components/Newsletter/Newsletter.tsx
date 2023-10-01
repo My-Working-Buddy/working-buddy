@@ -9,8 +9,11 @@ import {
   Text,
   Flex,
 } from '@chakra-ui/react';
+import { useTranslation } from '../../../Locales';
 
 export default function NewsLetter() {
+  const { t } = useTranslation();
+
   return (
     <Flex
       align={'center'}
@@ -31,7 +34,7 @@ export default function NewsLetter() {
           textAlign={'center'}
           mb={5}
         >
-          Subscribe to our Newsletter
+          {t('newsletter.headline')}
         </Heading>
         <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -56,7 +59,7 @@ export default function NewsLetter() {
           </FormControl>
           <FormControl w={{ base: '100%', md: '40%' }}>
             <Button w='100%' bg={'blue.900'}>
-              <Text color={'white'}>Subscribe</Text>
+              <Text color={'white'}> {t('newsletter.button.label')}</Text>
             </Button>
           </FormControl>
         </Stack>
@@ -64,6 +67,3 @@ export default function NewsLetter() {
     </Flex>
   );
 }
-
-//TO-DO: Move the texts to translation
-//TO-DO: Add test and stories

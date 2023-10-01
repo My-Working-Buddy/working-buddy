@@ -40,5 +40,11 @@
     "legal": {
       "rights_reserved": "© 2023 Working buddy. All rights reserved"
     }
+  },
+  "newsletter": {
+    "headline": "Subscribe to our Newsletter",
+    "button": {
+      "label": "Subscribe"
+    }
   }
 }
