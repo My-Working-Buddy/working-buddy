@@ -1,19 +1,15 @@
 import React from "react";
 import mainLogo from "../../../assets/logo/mwb-logo-transparent.png";
+import LoginButton from "../Auth0/Auth0.login";
 import { useTranslation } from "../../../Locales";
 
 import {
   Box,
   Flex,
-  Button,
   useColorModeValue,
   Stack,
   useDisclosure,
   IconButton,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
   Collapse,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -102,25 +98,9 @@ export default function Navbar() {
           </Stack>
 
           <Flex alignItems={"center"}>
-            <Menu>
-              <MenuButton
-                as={Button}
-                backgroundColor="blue.900"
-                _hover={{ bg: "#a891b7", color: "black" }}
-                color="white"
-                mx={4}
-              >
-                {t("navbar.menu_bar.headline")}
-              </MenuButton>
-              <MenuList>
-                <MenuItem as="a" href="/login">
-                  {t("navbar.menu_bar.menu_items.login")}
-                </MenuItem>
-                <MenuItem as="a" href="/signup">
-                  {t("navbar.menu_bar.menu_items.sign_up")}
-                </MenuItem>
-              </MenuList>
-            </Menu>
+            <Box ml="3">
+              <LoginButton />
+            </Box>
           </Flex>
         </Flex>
 
