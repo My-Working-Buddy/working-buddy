@@ -1,12 +1,11 @@
 import React from "react";
 import mainLogo from "../../../assets/logo/mwb-logo-transparent.png";
-import LoginButton from "../Auth0/Auth0.login"
+import LoginButton from "../Auth0/Auth0.login";
 import { useTranslation } from "../../../Locales";
 
 import {
   Box,
   Flex,
-  Button,
   useColorModeValue,
   Stack,
   useDisclosure,
@@ -99,15 +98,9 @@ export default function Navbar() {
           </Stack>
 
           <Flex alignItems={"center"}>
-              <Button
-                backgroundColor="blue.900"
-                _hover={{ bg: "#a891b7", color: "black" }}
-                color="white"
-                mx={4}
-              >
-                <LoginButton/>
-
-              </Button>
+            <Box ml="3">
+              <LoginButton />
+            </Box>
           </Flex>
         </Flex>
 
