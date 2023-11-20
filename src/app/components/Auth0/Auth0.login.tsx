@@ -1,10 +1,20 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Button } from "@chakra-ui/react";
 
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
-  return <button onClick={() => loginWithRedirect()}>Sign In</button>;
+  return (
+    <Button
+      backgroundColor="blue.900"
+      _hover={{ bg: "#a891b7", color: "black" }}
+      color="white"
+      onClick={() => loginWithRedirect()}
+    >
+      Sign In
+    </Button>
+  );
 };
 
 export default LoginButton;
