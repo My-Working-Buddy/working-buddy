@@ -20,7 +20,7 @@ describe("Banner Text", () => {
 
   it('renders banner text', () => {
     render(<Banner/>)
-    const messageTest = screen.getByText(/Lorem ipsum dolor sit amet/i)
+    const messageTest = screen.getByText(/Introducing My Working Buddy/i)
     expect(messageTest).toBeInTheDocument()
   })
 })
