@@ -5,7 +5,13 @@ const LogoutButton = () => {
   const { logout } = useAuth0();
 
   return (
-    <button onClick={() => logout({ logoutParams: { returnTo: "http://localhost:3000" } })}>
+    <button
+      onClick={() =>
+        logout({
+          logoutParams: { returnTo: `${process.env.REACT_APP_BASE_URL}` },
+        })
+      }
+    >
       Log Out
     </button>
   );
