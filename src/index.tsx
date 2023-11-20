@@ -16,8 +16,8 @@ root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <Auth0Provider
-        domain="dev-ayqgkm5tkx1eftkh.us.auth0.com"
-        clientId="hPIWaClUDUfRsHd9JMhXTLiLFVmHIa7W"
+        domain={`${process.env.REACT_APP_AUTH0_DOMAIN}`}
+        clientId={`${process.env.REACT_APP_AUTH0_CLIENT_ID}`}
         authorizationParams={{
           redirect_uri: "http://localhost:3000",
 
