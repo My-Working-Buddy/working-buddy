@@ -1,20 +1,71 @@
-import React from 'react';
-import { Box, Text, Heading } from "@chakra-ui/react";
-
+import React from "react";
+import {
+  Button,
+  Heading,
+  FormControl,
+  FormLabel,
+  Input,
+  Stack,
+  HStack,
+  Textarea,
+  Image,
+  AspectRatio,
+} from "@chakra-ui/react";
+import mwbCanva from "../../../assets/mwb-canva.jpg";
+import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
 
 const ContactUs = () => {
-return (
-    <div>
+  return (
+    <>
+      <>
+        <Navbar />
+      </>
       <div>
-        <Box maxW="32rem">
-          <Heading px="5" py="5" fontSize="lg">Get in-touch with us</Heading>
-        </Box>
-        <Box>
-          <Text px="5" fontSize="md">Get us on email and phone via 123-456</Text>
-        </Box>
-      </div>
-    </div>
-)
-}
+        <Stack direction="row" spacing="8">
+          <FormControl px="10" py="5" isRequired>
+            <Heading size="md">CONTACT US</Heading>
 
-export default ContactUs
+            <HStack py="5">
+              <div>
+                <FormLabel>Name </FormLabel>
+                <Input width="1/2" placeholder="Name" />
+              </div>
+            </HStack>
+            <Stack>
+              <div>
+                <FormLabel>Email</FormLabel>
+                <Input w="1/2" type="email" py="5" placeholder="Email" />
+              </div>
+              <div>
+                <FormLabel>Comment or Message</FormLabel>
+                <Textarea
+                  isRequired
+                  boxSize="xs"
+                  placeholder="Add feedback, comments or messages"
+                />
+              </div>
+
+              <div>
+                <Button type="submit" colorScheme="teal">
+                  Submit
+                </Button>
+              </div>
+            </Stack>
+          </FormControl>
+          <AspectRatio minW="sm">
+            <Image
+              objectFit="cover"
+              maxW={{ base: "100%", sm: "300px" }}
+              src={mwbCanva}
+              alt="banner-logo"
+            />
+          </AspectRatio>
+        </Stack>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default ContactUs;
